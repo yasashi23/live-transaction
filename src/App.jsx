@@ -14,7 +14,7 @@ function App() {
   const loadingModal = `container__loading-modal ${modal}`
   return (
     <div className="container">
-    <Analytics />
+    {/* <Analytics /> */}
     <div className="container__content">
       <MainMoney transaction={transactionList}/>
       <div className="container__body">
