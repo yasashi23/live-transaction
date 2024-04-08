@@ -4,6 +4,7 @@ import MainMoney from './component/mainMoney'
 import ContainerTransaction from './component/containerTransaction'
 import BtnTransaction from './component/btnTransaction'
 import Modal from './component/modal'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [modal,setModal] = useState("off")
@@ -13,6 +14,7 @@ function App() {
   const loadingModal = `container__loading-modal ${modal}`
   return (
     <div className="container">
+    <Analytics />
     <div className="container__content">
       <MainMoney transaction={transactionList}/>
       <div className="container__body">
