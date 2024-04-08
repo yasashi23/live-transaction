@@ -44,7 +44,7 @@
 }
 @media screen and (max-width: 550px) {
   .container .container__content .container__main-money h1 {
-    font-size: 30px;
+    font-size: 38px;
   }
 }
 .container .container__content .container__main-money p {
@@ -54,7 +54,7 @@
 }
 @media screen and (max-width: 550px) {
   .container .container__content .container__main-money p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .container .container__content .container__body {
@@ -64,7 +64,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 50px 50px 0px 0px;
-  margin-top: 150px;
+  margin-top: 160px;
 }
 .container .container__content .container__body .container__transaction {
   display: flex;
@@ -78,19 +78,10 @@
   font-weight: 800;
   font-size: 22px;
 }
-@media screen and (max-width: 550px) {
-  .container .container__content .container__body .container__transaction > h3 {
-    font-size: 18px;
-  }
-}
 .container .container__content .container__body .container__transaction > p {
   color: #013463;
   font-size: 14px;
-}
-@media screen and (max-width: 550px) {
-  .container .container__content .container__body .container__transaction > p {
-    font-size: 12px;
-  }
+  margin-bottom: 16px;
 }
 .container .container__content .container__body .container__transaction .container__transaction-content {
   display: flex;
@@ -108,6 +99,7 @@
   display: flex;
   align-items: center;
   background-color: #F1F1FB;
+  border: 1px solid #dfdede;
   width: 250px;
   padding: 16px 36px;
   justify-content: space-between;
@@ -118,39 +110,19 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 550px) {
-  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction {
-    padding: 8px 36px;
-  }
-}
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction > h3 {
   font-size: 18px;
   font-weight: 800;
   color: #37C48F;
-}
-@media screen and (max-width: 550px) {
-  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction > h3 {
-    font-size: 16px;
-  }
 }
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan h5 {
   color: #013463;
   font-size: 14px;
   margin-bottom: 3px;
 }
-@media screen and (max-width: 550px) {
-  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan h5 {
-    font-size: 12px;
-  }
-}
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan p {
   color: #868686;
   font-size: 12px;
-}
-@media screen and (max-width: 550px) {
-  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan p {
-    font-size: 10px;
-  }
 }
 .container .container__content .container__button {
   width: inherit;
@@ -173,12 +145,6 @@
   font-size: 16px;
   cursor: pointer;
 }
-@media screen and (max-width: 550px) {
-  .container .container__content .container__button button {
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
 .container .container__content .container__button button:hover {
   background-color: white;
   color: #00B386;
@@ -190,7 +156,7 @@
 }
 @media screen and (max-width: 550px) {
   .container .container__content .container__button p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .container .container__content .container__loading-modal {
@@ -221,11 +187,6 @@
 }
 .container .container__content .container__loading-modal .container__modal.off {
   display: none;
-}
-@media screen and (max-width: 550px) {
-  .container .container__content .container__loading-modal .container__modal {
-    width: 270px;
-  }
 }
 .container .container__content .container__loading-modal .container__modal .container__close-btn {
   position: absolute;
@@ -270,13 +231,14 @@
 }
 @media screen and (max-width: 550px) {
   .container .container__content .container__loading-modal .container__modal .container__modal-container h5, .container .container__content .container__loading-modal .container__modal .container__modal-container label {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 .container .container__content .container__loading-modal .container__modal .container__modal-container .container__keterangan-input {
   margin-bottom: 22px;
 }
 .container .container__content .container__loading-modal .container__modal .container__modal-container .container__keterangan-input input {
+  margin-top: 5px;
   outline: none;
   height: 25px;
   font-size: 16px;
