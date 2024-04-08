@@ -9,14 +9,21 @@
 @mixin transaction{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 200px;
     gap: 10px;
+    @media screen and (max-width:550px) {
+            width: 70%;
+        }
 }
 @mixin money-transaction{
     display: flex;
     align-items: center;
     background-color: $listcr;
     width: 250px;
+    @media screen and (max-width:550px) {
+            width: 100%;
+    }
     padding: 16px 36px;
     // gap: 120px;
     justify-content: space-between;
@@ -47,11 +54,16 @@
         color: $mainFontcr;
         font-weight: 800;
         font-size: 22px;
-        margin-top: 26px;
+        @media screen and (max-width:550px) {
+             font-size: 18px;
+            }
     }
     >p{
         color: $mainFontcr;
         font-size: 14px;
+        @media screen and (max-width:550px) {
+                font-size: 12px;
+            }
     }
     .container__transaction-content{
         @include transaction;

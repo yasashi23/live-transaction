@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function MainMoney({ transaction }) {
     function summed() {
+        // console.table(transaction)
         const result = transaction.reduce((total, { uang }) => total + Number(uang), 0);
         return result;
     }

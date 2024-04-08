@@ -42,10 +42,20 @@
   margin-bottom: 6px;
   font-size: 42px;
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__main-money h1 {
+    font-size: 30px;
+  }
+}
 .container .container__content .container__main-money p {
   font-size: 12px;
   color: #dedede;
-  font-weight: 600;
+  font-weight: 500;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__main-money p {
+    font-size: 10px;
+  }
 }
 .container .container__content .container__body {
   width: 100%;
@@ -67,17 +77,32 @@
   color: #013463;
   font-weight: 800;
   font-size: 22px;
-  margin-top: 26px;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction > h3 {
+    font-size: 18px;
+  }
 }
 .container .container__content .container__body .container__transaction > p {
   color: #013463;
   font-size: 14px;
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction > p {
+    font-size: 12px;
+  }
+}
 .container .container__content .container__body .container__transaction .container__transaction-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 200px;
   gap: 10px;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction .container__transaction-content {
+    width: 70%;
+  }
 }
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction {
   display: flex;
@@ -87,6 +112,11 @@
   padding: 16px 36px;
   justify-content: space-between;
   border-radius: 100px;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction {
+    width: 100%;
+  }
 }
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction > h3 {
   font-size: 18px;
@@ -123,6 +153,12 @@
   font-size: 16px;
   cursor: pointer;
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__button button {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 .container .container__content .container__button button:hover {
   background-color: white;
   color: #00B386;
@@ -131,6 +167,11 @@
   padding-top: 6px;
   color: rgb(139, 139, 139);
   font-size: 15px;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__button p {
+    font-size: 10px;
+  }
 }
 .container .container__content .container__loading-modal {
   background: linear-gradient(168.17deg, rgba(0, 0, 0, 0.5) -9.79%, rgba(0, 0, 0, 0.2) 106.34%);
@@ -161,6 +202,11 @@
 .container .container__content .container__loading-modal .container__modal.off {
   display: none;
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__loading-modal .container__modal {
+    width: 270px;
+  }
+}
 .container .container__content .container__loading-modal .container__modal .container__close-btn {
   position: absolute;
   top: 10px;
@@ -188,6 +234,11 @@
   font-weight: 800;
   color: #013463;
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__loading-modal .container__modal .container__modal-container > input {
+    font-size: 34px;
+  }
+}
 .container .container__content .container__loading-modal .container__modal .container__modal-container > input::-webkit-outer-spin-button, .container .container__content .container__loading-modal .container__modal .container__modal-container > input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -196,6 +247,11 @@
   text-align: center;
   font-weight: 500;
   color: #013463;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__loading-modal .container__modal .container__modal-container h5, .container .container__content .container__loading-modal .container__modal .container__modal-container label {
+    font-size: 11px;
+  }
 }
 .container .container__content .container__loading-modal .container__modal .container__modal-container .container__keterangan-input {
   margin-bottom: 22px;
@@ -206,6 +262,12 @@
   font-size: 16px;
   font-weight: 900;
   text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__loading-modal .container__modal .container__modal-container .container__keterangan-input input {
+    width: 180px;
+    height: 20px;
+  }
 }
 .container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn {
   display: flex;
