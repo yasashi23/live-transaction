@@ -25,6 +25,9 @@
             width: 100%;
     }
     padding: 16px 36px;
+    @media screen and (max-width:550px) {
+        padding: 8px 36px;
+    }
     // gap: 120px;
     justify-content: space-between;
     border-radius: 100px;
@@ -32,6 +35,9 @@
         font-size: 18px;
         font-weight: 800;
         color: $greenFontcr;
+        @media screen and (max-width:550px) {
+                font-size: 16px;
+            }
     }
 }
 @mixin keterangan{
@@ -39,11 +45,16 @@
         color: $mainFontcr;
         font-size: 14px;
         margin-bottom: 3px;
+        @media screen and (max-width:550px) {
+                font-size: 12px;
+            }
     }
     p{
         color:#868686;
         font-size: 12px;
-
+        @media screen and (max-width:550px) {
+                font-size: 10px;
+            }
 
     }
 }

@@ -118,19 +118,39 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction {
+    padding: 8px 36px;
+  }
+}
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction > h3 {
   font-size: 18px;
   font-weight: 800;
   color: #37C48F;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction > h3 {
+    font-size: 16px;
+  }
 }
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan h5 {
   color: #013463;
   font-size: 14px;
   margin-bottom: 3px;
 }
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan h5 {
+    font-size: 12px;
+  }
+}
 .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan p {
   color: #868686;
   font-size: 12px;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan p {
+    font-size: 10px;
+  }
 }
 .container .container__content .container__button {
   width: inherit;
