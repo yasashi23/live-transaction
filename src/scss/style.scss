@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+$maincr :#01B880;
+$mainFontcr:#013463;
+$redFontcr:#FF667A;
+$greenFontcr:#37C48F;
+$listcr:#F1F1FB;
+$btncr:#00B386;
+
+@mixin container-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+
+@mixin container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    @media screen and (max-width:550px){
+        width: 100%;
+    }
+    height: 100%;
+    background-color: white;
+    position: relative;
+
+}
+@mixin container-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:50px 50px 0px 0px;
+    margin-top: 150px;
+}
+@mixin loading-modal{
+    &.off{
+        display: none;
+    }
+    background: linear-gradient(168.17deg, rgba(0, 0, 0, 0.5) -9.79%, rgba(0, 0, 0, 0.2) 106.34%);
+    backdrop-filter: blur(3.6px);
+    width: inherit;
+    height: 99.9%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    z-index: 99999;
+    position: fixed;
+}
+
+.container{
+    @include container-style;
+    .container__content{
+        @include container-content;
+        @import 'mainMoney.scss';
+        .container__body{
+            @include container-body;
+            @import 'transaction.scss';
+        }
+        @import 'button.scss';
+        .container__loading-modal{
+            @include loading-modal;
+            @import 'modal.scss';
+        }
+    }
+}

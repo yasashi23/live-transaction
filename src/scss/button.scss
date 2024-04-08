@@ -1,0 +1,30 @@
+.container__button{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+    button{
+        border: 1px solid $btncr;
+        background-color: $btncr;
+        color: white;
+        padding: 16px 0;
+        width: 90%;
+        border-radius: 100px;
+        font-weight: 800;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: $btncr;
+        }
+    }
+    p{
+        padding-top: 6px;
+        color: rgb(139, 139, 139);
+        font-size: 15px;
+    }
+}

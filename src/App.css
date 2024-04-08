@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+.container .container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+@media screen and (max-width: 550px) {
+  .container .container__content {
+    width: 100%;
+  }
+}
+.container .container__content .container__main-money {
+  width: inherit;
+  background-color: #01B880;
+  position: fixed;
+}
+.container .container__content .container__main-money .container__content-money {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.container .container__content .container__main-money h1 {
+  margin-bottom: 6px;
+  font-size: 42px;
+}
+.container .container__content .container__main-money p {
+  font-size: 12px;
+  color: #dedede;
+  font-weight: 600;
+}
+.container .container__content .container__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: 150px;
+}
+.container .container__content .container__body .container__transaction {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  align-items: center;
+}
+.container .container__content .container__body .container__transaction > h3 {
+  color: #013463;
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 26px;
+}
+.container .container__content .container__body .container__transaction > p {
+  color: #013463;
+  font-size: 14px;
+}
+.container .container__content .container__body .container__transaction .container__transaction-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+  gap: 10px;
+}
+.container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction {
+  display: flex;
+  align-items: center;
+  background-color: #F1F1FB;
+  width: 250px;
+  padding: 16px 36px;
+  justify-content: space-between;
+  border-radius: 100px;
+}
+.container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction > h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #37C48F;
+}
+.container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan h5 {
+  color: #013463;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.container .container__content .container__body .container__transaction .container__transaction-content .container__money-transaction .container__keterangan p {
+  color: #868686;
+  font-size: 12px;
+}
+.container .container__content .container__button {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+.container .container__content .container__button button {
+  border: 1px solid #00B386;
+  background-color: #00B386;
+  color: white;
+  padding: 16px 0;
+  width: 90%;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .container__content .container__button button:hover {
+  background-color: white;
+  color: #00B386;
+}
+.container .container__content .container__button p {
+  padding-top: 6px;
+  color: rgb(139, 139, 139);
+  font-size: 15px;
+}
+.container .container__content .container__loading-modal {
+  background: linear-gradient(168.17deg, rgba(0, 0, 0, 0.5) -9.79%, rgba(0, 0, 0, 0.2) 106.34%);
+  backdrop-filter: blur(3.6px);
+  width: inherit;
+  height: 99.9%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  z-index: 99999;
+  position: fixed;
+}
+.container .container__content .container__loading-modal.off {
+  display: none;
+}
+.container .container__content .container__loading-modal .container__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 300px;
+  height: 250px;
+  z-index: 9999;
+  top: 15%;
+  border: 1px solid #000;
+  position: relative;
+}
+.container .container__content .container__loading-modal .container__modal.off {
+  display: none;
+}
+.container .container__content .container__loading-modal .container__modal .container__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container > input {
+  width: 200px;
+  margin-top: 9px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #013463;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container > input::-webkit-outer-spin-button, .container .container__content .container__loading-modal .container__modal .container__modal-container > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container h5, .container .container__content .container__loading-modal .container__modal .container__modal-container label {
+  text-align: center;
+  font-weight: 500;
+  color: #013463;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__keterangan-input {
+  margin-bottom: 22px;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__keterangan-input input {
+  outline: none;
+  height: 25px;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn {
+  display: flex;
+  gap: 15px;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn button {
+  padding: 10px 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn button.container__masuk-btn {
+  background-color: #37C48F;
+  border: 1px solid #37C48F;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn button.container__masuk-btn:hover {
+  background-color: transparent;
+  border: 1px solid #37C48F;
+  color: #37C48F;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn button.container__keluar-btn {
+  background-color: #FF667A;
+  border: 1px solid #FF667A;
+}
+.container .container__content .container__loading-modal .container__modal .container__modal-container .container__modal-btn button.container__keluar-btn:hover {
+  background-color: transparent;
+  border: 1px solid #FF667A;
+  color: #FF667A;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,65 @@
+@mixin container-all{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    align-items: center;
+
+}
+@mixin transaction{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    gap: 10px;
+}
+@mixin money-transaction{
+    display: flex;
+    align-items: center;
+    background-color: $listcr;
+    width: 250px;
+    padding: 16px 36px;
+    // gap: 120px;
+    justify-content: space-between;
+    border-radius: 100px;
+    >h3{
+        font-size: 18px;
+        font-weight: 800;
+        color: $greenFontcr;
+    }
+}
+@mixin keterangan{
+    h5{
+        color: $mainFontcr;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    p{
+        color:#868686;
+        font-size: 12px;
+
+
+    }
+}
+
+.container__transaction{
+    @include container-all;
+    > h3{
+        color: $mainFontcr;
+        font-weight: 800;
+        font-size: 22px;
+        margin-top: 26px;
+    }
+    >p{
+        color: $mainFontcr;
+        font-size: 14px;
+    }
+    .container__transaction-content{
+        @include transaction;
+        .container__money-transaction{
+            @include money-transaction;
+            .container__keterangan{
+                @include keterangan;
+            }
+        }
+    }
+}
